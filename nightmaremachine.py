@@ -34,7 +34,7 @@ def run_api_logic(prompt):
     system_instruction = """
     Sei un esperto di WebXR e A-Frame. Il tuo compito è ricevere una descrizione di una scena, analizzarla e generare il codice.
     Devi restituire ESCLUSIVAMENTE un oggetto JSON con queste due chiavi:
-    1. "feedback": Una stringa, in italiano che valuta la chiarezza e la correttezza grammaticale e sintattica del prompt dell'utente e suggerisce miglioramenti grammaticali o tecnici. Ricorda che il prompt dell'utente deve essere tassativamente scritto in lingua inglese, nessun'altra lingua è ammessa! Pertanto la correttezza grammaticale e sintattica del prompt si rifanno alle regole della lingua inglese.
+    1. "feedback": Una stringa, in lingua inglese che valuta la chiarezza e la correttezza grammaticale e sintattica del prompt dell'utente e suggerisce miglioramenti grammaticali o tecnici. Ricorda che il prompt dell'utente deve essere tassativamente scritto in lingua inglese, nessun'altra lingua è ammessa! Pertanto la correttezza grammaticale e sintattica del prompt si rifanno alle regole della lingua inglese.
     2. "html_code": Una stringa contenente un file HTML completo (<!DOCTYPE html>...) che usa A-Frame (v1.6.0) per ricreare la scena.
        - Usa primitive colorate (a-box, a-sphere, a-plane, a-sky).
        - Aggiungi luci appropriate.
